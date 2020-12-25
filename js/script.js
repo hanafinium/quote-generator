@@ -2,20 +2,6 @@ document.getElementById('submit-button').disabled = true;
 let qt = document.getElementById('quote');
 let auth = document.getElementById('author');
 let btn = document.getElementById('gn-btn');
-
-//Generating quotes from quotes.js file
-btn.addEventListener('click', generate);
-
-function generate() {
-    //random number generation
-    let max = quotes.length - 1;
-    let min = 0;
-    let num = Math.floor(Math.random() * (max - min + 1));
-    // quote display
-    qt.textContent = quotes[num].quote;
-    auth.textContent = quotes[num].author;
-}
-
 let tempC = document.getElementById('temperatureC');
 let tempF = document.getElementById('temperatureF');
 
@@ -48,6 +34,7 @@ let tempF = document.getElementById('temperatureF');
             const fahrenheit = (celcius * 1.8 + 32);
             tempC.textContent = celcius + "C";
             tempF.textContent = Math.round(fahrenheit) + "F";
+            //Weather condition display
             const weather = jsonData.weather[0].main;
             let icon = document.getElementById('weather-icon');
             switch(weather) {
@@ -92,7 +79,7 @@ let tempF = document.getElementById('temperatureF');
                 console.log(error.message);
             })
     }
-    // getQuote();
+    getQuote();
 })();
 
 

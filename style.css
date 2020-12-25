@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
 
 :root {
-    /* background-image: linear-gradient(to top, #051937, #0f1f40, #192549, #222b52, #2c315b); */
     --BACKGROUND: #2C315B;
     --FONT: #F2F594;
     --GRAY: #CFCFCD;
@@ -79,11 +78,23 @@ svg {
     justify-content: center;
     margin: 8rem auto;
     height: 49vh;
-    width: 50vw;
+    width: 70vw;
     font-size: 2rem;
     text-align: center;
 }
 
+#qotd {
+    font-size: 1.5rem;
+    display:'';
+}
+
+#qotd>p {
+    margin: 0;
+}
+
+small {
+    font-size: .7rem;
+}
 #author {
     font-weight: 300;
 }
@@ -106,7 +117,7 @@ button:disabled {
     display: block;
     margin: 1rem auto;
     padding: 0.5rem 1rem;
-    bottom: 1rem;
+    bottom: .5rem;
     font-size: 1.2rem;
     cursor: pointer;
     border: none;
