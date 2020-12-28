@@ -1,1 +1,0 @@
-const owAPIKEY = 'e0f4bb830021845f10864e1844984a21';
