@@ -1,4 +1,4 @@
-document.getElementById('submit-button').disabled = true;
+document.getElementById('birthday-button').disabled = true;
 let qt = document.getElementById('quote');
 let auth = document.getElementById('author');
 let btn = document.getElementById('gn-btn');
@@ -27,8 +27,6 @@ let tempF = document.getElementById('temperatureF');
             }
             })
             .then((jsonData) => {
-            console.log('all ok');
-            console.log(jsonData);
             //Temperature Display
             const celcius = Math.round(jsonData.main.temp);
             const fahrenheit = (celcius * 1.8 + 32);
